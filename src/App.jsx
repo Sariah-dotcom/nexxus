@@ -1,7 +1,10 @@
 import React from 'react'
 import Hero from './components/Hero'
 import Header from './components/Header'
-import About from './About'
+import About from './components/About'
+import Footer from './components/Footer'
+
+
 
 
 export default function App() {
@@ -10,6 +13,7 @@ export default function App() {
       <Header />
       <Hero />
       <About />
+      <Footer />
     </div>
   )
 }
