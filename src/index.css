@@ -5,6 +5,13 @@
 body {
   background-color: #121212;
   padding: 0.8rem;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width:1024px) {
+  body {
+    padding: 2rem;
+  }
 }
 
 h1, h2, h3, ul {
@@ -38,24 +45,6 @@ button:hover {
   border: 1px solid #FFF;
 }
 
-.menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 70%;
-  height: 100%;
-  background-color: #000;
-  color: #FFF;
-  transition: right 0.5s ease-in-out;
-}
-
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  font-size: 1.5rem;
-}
-
-.menu.open {
-  right: 0;
+.tertiary-button {
+  text-decoration: underline;
 }

@@ -10,19 +10,12 @@ export default function Header() {
     };
 
   return (
-    <nav className='flex justify-between items-center p-3 bg-med-grey border-2 border-light-grey w-full rounded-[1rem]'>
+    <nav className='flex relative justify-between items-center p-3 lg:px-10 bg-med-grey border-2 border-light-grey w-full rounded-[1rem] drop-shadow-xl'>
         <img src="/nexxus-logo.png" alt="Nexxus logo" />
 
-        <div className='flex'>
-            <RiMenu3Fill onClick={toggleMenu} className='text-2xl font-bold text-white' />
-            <ul className={`menu p-10 ${isMenuOpen ? "open" : ""}`}>
-                <IoMdClose className='absolute right-10' onClick={toggleMenu} />
-                <li className='mt-12'><a href="#">About Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </div>
+        {/* Mobile Menu */}
+       
+
     </nav>
   )
 }
