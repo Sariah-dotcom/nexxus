@@ -12,6 +12,9 @@ export default {
         "med-purple": "#7A1CAC",
         "dark-purple": "#2E073F",
         "brown":"#C08F5F",
+      },
+      fontFamily: {
+        "dm": ["DM Sans", "sans-serif"]
       }
     },
   },
