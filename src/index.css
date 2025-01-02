@@ -74,3 +74,7 @@ nav {
 .menu.open {
   right: 0;
 }
+
+.cta-text span {
+  display: block;
+}
