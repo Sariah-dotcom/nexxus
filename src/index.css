@@ -28,7 +28,7 @@ button {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 1rem;
 }
 
 button:hover {
@@ -52,7 +52,7 @@ button:hover {
 }
 
 nav {
-  background: rgba(10, 10, 10, 0.603);
+  background: rgba(10, 10, 10, 0.281);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(1px);

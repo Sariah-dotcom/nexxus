@@ -12,8 +12,8 @@ export default function App() {
     <div className='flex flex-col gap-[5rem]'>
       <Header />
       <Hero />
-      {/* <About />
-      <Footer /> */}
+      <About />
+      <Footer />
     </div>
   )
 }

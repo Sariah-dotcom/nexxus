@@ -10,7 +10,7 @@ export default function Header() {
     };
 
   return (
-    <nav className='fixed w-full border-b border-light-grey p-2 lg:py-3 lg:px-20 z-20'>
+    <nav className='fixed w-full border-b border-light-grey py-3 px-4 lg:py-3 lg:px-20 z-20'>
       <div className='flex justify-between items-center'>
         <img src="/nexxus-logo.png" alt="Nexxus logo" />
 
@@ -21,7 +21,7 @@ export default function Header() {
           <li><a href="#">Contact</a></li>
         </ul>
 
-        <div>
+        <div className='lg:hidden'>
           <RiMenu3Fill onClick={toggleMenu} className='text-xl text-white'/>
           <ul className={`menu p-10 ${isMenuOpen ? "open" : ""}`}>
             <IoMdClose onClick={toggleMenu} className='absolute right-5 text-xl'/>
