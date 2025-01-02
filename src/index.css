@@ -4,15 +4,13 @@
 
 body {
   background-color: #121212;
-  padding: 0.8rem;
-  overflow-x: hidden;
 }
 
-@media screen and (min-width:1024px) {
+/* @media screen and (min-width:1024px) {
   body {
     padding: 2rem;
   }
-}
+} */
 
 h1, h2, h3, ul {
   font-family: 'DM Sans', sans-serif;
@@ -47,4 +45,32 @@ button:hover {
 
 .tertiary-button {
   text-decoration: underline;
+}
+
+.nav-links li:hover {
+  color: #7A1CAC;
+}
+
+nav {
+  background: rgba(10, 10, 10, 0.603);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.menu {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  transition: right 0.5s ease-in-out;
+  overflow-y: auto; /* Allow scrolling if the content exceeds the viewport height */
+}
+
+.menu.open {
+  right: 0;
 }
