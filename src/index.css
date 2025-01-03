@@ -54,8 +54,26 @@ button:hover {
 nav {
   background: rgba(10, 10, 10, 0.055);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: #1F1E1E;
+  border: 1px solid #5A5A5A;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 20vh;
+  position: absolute;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    height: 50vh;
+    width: 90%;
+  }
+  
 }
 
 .menu {
@@ -68,7 +86,7 @@ nav {
   width: 70%;
   height: 100vh;
   transition: right 0.5s ease-in-out;
-  overflow-y: auto; /* Allow scrolling if the content exceeds the viewport height */
+  overflow-y: auto;
 }
 
 .menu.open {
@@ -77,4 +95,22 @@ nav {
 
 .cta-text span {
   display: block;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.animate-carousel {
+  animation: carousel 15s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

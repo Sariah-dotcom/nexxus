@@ -67,7 +67,7 @@ export default function Hero() {
                 <button className='hero-button secondary-button'>View Projects</button>
             </div>
 
-            <img className='hero-img absolute opacity-20 h-[20rem] lg:h-[30rem] lg:-mt-10' src="/hero-img.png" alt="" />
+            <img className='hero-img absolute h-[20rem] lg:h-[30rem] lg:-mt-20' src="/hero-img.png" alt="" />
 
         </div>
     </section>

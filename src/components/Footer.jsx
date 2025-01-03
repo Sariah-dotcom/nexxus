@@ -6,7 +6,7 @@ import { FaBehanceSquare } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className='px-5'>
+    <footer className='px-5 py-[20rem]'>
         <img src="/nexxus-logo-lg.png" alt="Nexxus logo" />
         
         <ul className='text-white py-3 leading-tight'>
