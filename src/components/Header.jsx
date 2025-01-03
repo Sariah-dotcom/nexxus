@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +11,12 @@ export default function Header() {
         setIsMenuOpen((prev) => !prev);
     };
 
+    useGSAP(()=> {
+      gsap.fromTo("nav", {opacity: 0, y: -100},{opacity: 1, y: 0, delay: 6})
+    })
+
   return (
+    
     <nav className='fixed w-full border-b border-light-grey py-3 px-4 lg:py-3 lg:px-20 z-20'>
       <div className='flex justify-between items-center'>
         <img src="/nexxus-logo.png" alt="Nexxus logo" />

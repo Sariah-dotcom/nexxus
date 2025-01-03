@@ -5,7 +5,9 @@ import { useGSAP } from "@gsap/react";
 export default function Hero() {
   useGSAP(()=>{
 
-    gsap.fromTo(".cta-1", {x: -20, opacity: 0}, {x: 0, opacity: 1, duration: 0.75 })
+    gsap.fromTo(".hero-img", {opacity: 0, scale: 0.2}, {opacity: 0.2, scale: 1, duration: 1.5, ease: 'back.inOut'})
+
+    gsap.fromTo(".cta-1", {x: -20, opacity: 0}, {x: 0, opacity: 1, duration: 0.75 }, "<99%")
     gsap.fromTo(".cta-2", {y: 20, opacity: 0}, {y: 0, opacity: 1, duration: 0.75}, "<50%")
     gsap.fromTo(".cta-3", {x: 20, opacity: 0}, {x: 0, opacity: 1, duration: 0.75}, "<50%")
     gsap.fromTo(".cta-4", {y: 20, opacity: 0}, {y: 0, opacity: 1, duration: 0.75}, "<50%")
@@ -13,12 +15,10 @@ export default function Hero() {
 
     gsap.fromTo(".hero-text",
       {
-        scale: 0.5,
         y: 20,
         opacity: 0
       },
       {
-        scale: 1,
         y: 0,
         opacity: 1,
         duration: 1.2,
@@ -43,7 +43,7 @@ export default function Hero() {
 
   })
   return (
-    <section className='h-[100vh] flex items-center justify-center'>
+    <section className='h-[100vh] flex flex-col items-center justify-center'>
         <div className='text-center flex flex-col gap-10 items-center'>
            <div className='relative z-10 flex flex-col gap-2'>
             
@@ -53,7 +53,7 @@ export default function Hero() {
                 <h1><span className='cta-2'>Results </span></h1>
                 <h1><span className='cta-3'>For</span></h1>
               </div>
-              <div className='cta-text flex gap-3 -mt-3 lg:-mt-1'>
+              <div className='cta-text flex gap-3 -mt-3 lg:-mt-0'>
                 <h1><span className='cta-4'>Small </span></h1>
                 <h1><span className='cta-5'>Businesses </span></h1>
               </div>
@@ -66,6 +66,9 @@ export default function Hero() {
                 <button className='hero-button primary-button'>Get Started</button>
                 <button className='hero-button secondary-button'>View Projects</button>
             </div>
+
+            <img className='hero-img absolute opacity-20 h-[20rem] lg:h-[30rem] lg:-mt-10' src="/hero-img.png" alt="" />
+
         </div>
     </section>
   )
